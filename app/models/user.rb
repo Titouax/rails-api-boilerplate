@@ -1,6 +1,7 @@
 class User < ApplicationRecord
     #-- Relations -----------------------------------------------------------------------------------
     has_secure_password
+    has_many :posts
 
     #-- Callbacks -----------------------------------------------------------------------------------
     before_validation { 

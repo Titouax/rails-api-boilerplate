@@ -6,9 +6,6 @@ class HomeController < ApplicationController
       version: '0.1.0', 
       auteur: 'Titouax', 
       description: 'Une api pour un blog',
-      routes: {
-        "root": "/", 
-        },
     }, status: :ok
   end
 end
