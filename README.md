@@ -1,24 +1,28 @@
-# README
+# Rails API Boilerplate 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Cette app est une base de démarrage pour créer une API avec Ruby on Rails qui intègre un systeme d'authentification JWT, un système de permission et de rôles et la configuration du CORS et d'un pare-feu pour notre application. 
 
-Things you may want to cover:
+Cette app est issu de [l'article publier sur médium](https://titouandessus.medium.com/ruby-on-rails-api-apprendre-jwt-cors-authentification-knock-roles-permissions-pundit-7bfd3bea1b) qui explique comment la créer de zéro 
 
-* Ruby version
 
-* System dependencies
+Jeter y un oeil comme documentation de référence. 
 
-* Configuration
 
-* Database creation
+## Installation 
 
-* Database initialization
+```bash
+git clone https://github.com/Titouax/rails-api-boilerplate.git && 
+cd rails-api-boilerplate/ && 
+bundle install  && 
+rails db:create db:migrate db:seed 
+```
 
-* How to run the test suite
+Renommer le fichier `config/application.yml.default` en `config/application.yml`
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+rails s 
+```
 
-* Deployment instructions
 
-* ...
+Vous pouvez maintenant visiter votre [http://localhost:3000/](http://localhost:3000/)
+

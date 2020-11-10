@@ -3,9 +3,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+# automatated active model serialization 
 gem 'active_model_serializers'
+
+# JWT Based Authentification system
 gem 'knock', git: 'https://github.com/nsarno/knock', branch: 'master', ref: '9214cd027422df8dc31eb67c60032fbbf8fc100b'
+
+# ENV Variables manager
 gem 'figaro'
+
+# Permissions system
 gem 'pundit'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
