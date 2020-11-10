@@ -120,6 +120,8 @@ GEM
       method_source (~> 1.0)
     puma (4.3.6)
       nio4r (~> 2.0)
+    pundit (2.1.0)
+      activesupport (>= 3.0.0)
     rack (2.2.3)
     rack-attack (6.3.1)
       rack (>= 1.0, < 3)
@@ -193,6 +195,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   pry
   puma (~> 4.1)
+  pundit
   rack-attack
   rack-cors
   rails (~> 6.0.3, >= 6.0.3.4)
