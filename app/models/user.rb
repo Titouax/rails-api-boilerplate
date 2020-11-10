@@ -24,11 +24,16 @@ class User < ApplicationRecord
         role == 'admin'
     end
 
+    # def self.from_token_payload payload
+    #     self.find_by(email: payload["email"]) 
+    # end
+
     def to_token_payload
-        JSON.parse({
+        {
+            sub: self.id,
             username: self.username, 
             email: self.email, 
             role: self.role
-        }.to_json)
+        }
     end
 end
