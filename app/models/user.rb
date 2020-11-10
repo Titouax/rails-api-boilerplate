@@ -23,4 +23,12 @@ class User < ApplicationRecord
     def admin?
         role == 'admin'
     end
+
+    def to_token_payload
+        JSON.parse({
+            username: self.username, 
+            email: self.email, 
+            role: self.role
+        }.to_json)
+    end
 end
